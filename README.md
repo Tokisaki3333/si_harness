@@ -143,13 +143,9 @@ rt.record_turn("你好", res.message["content"], turn=1)
 rt.close()
 ```
 
-## 与 bili_app_control 的关系
-
-本模块不依赖 B 站控制层。接入时由上层把私信文本作为 `user_msg` 传入，把模型回复发回即可。
-
 ## 注意
 
-- 不含 `key.json`、`config.json`、`data/`；
+- `key.json` 是占位假值；不含 `config.json`、`data/`；
 - 压缩失败**不本地回退**：抛 `CompressError`，CLI 报错并提示用户用 `/compress` 手动重试；
 - 所有会话默认共用一个 `session_id`（`cli`），需要隔离时改配置。
 
