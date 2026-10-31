@@ -7,7 +7,7 @@ from __future__ import annotations
 import re
 
 PLACEHOLDER = "[???]"
-MODES = ("DAILY", "INTIMATE", "EROTIC", "EXITING")
+MODES = ("DAILY", "CLOSE", "INTENSE", "EXITING")
 
 PATTERNS = [
     re.compile(r"\[\[STATE[^\]]*\]\]", re.I),

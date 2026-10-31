@@ -113,7 +113,7 @@ python -m harness.cli
 | `harness/bootstrap.py` `objective_block` | `ranked[:10]` | 客观命中最多 10 条索引 |
 | `harness/long_term.py` `CANDIDATE_POOL` | `5000` | 每轮参与评分的卡数上限 |
 | `harness/long_term.py` `render_block` | Δ 3 + 语义 5 + 随机 2 | 情感候选组配额 |
-| `harness/cli.py` `max_tokens` | 3000 / EROTIC 4000 | 回复长度上限 |
+| `harness/cli.py` `max_tokens` | 3000 / INTENSE 4000 | 回复长度上限 |
 
 ### 把情感候选调到 20
 

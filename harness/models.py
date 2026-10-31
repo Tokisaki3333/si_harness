@@ -5,14 +5,14 @@ from typing import Optional
 
 @dataclass
 class State:
-    mode: str = "DAILY"          # DAILY / INTIMATE / EROTIC / EXITING
+    mode: str = "DAILY"          # DAILY / CLOSE / INTENSE / EXITING
     affection: int = 68
     trust: int = 62
-    arousal: int = 0
+    intensity: int = 0
     mood: str = "平静"
 
     def copy(self) -> "State":
-        return State(self.mode, self.affection, self.trust, self.arousal, self.mood)
+        return State(self.mode, self.affection, self.trust, self.intensity, self.mood)
 
 
 @dataclass

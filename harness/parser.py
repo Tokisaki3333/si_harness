@@ -27,7 +27,7 @@ def _parse_state(inner: str) -> tuple[dict, bool, str | None]:
         if k == "loc":
             loc = v
             continue
-        if k in ("affection", "trust", "arousal"):
+        if k in ("affection", "trust", "intensity"):
             try:
                 delta[k] = int(v.replace("+", ""))
             except ValueError:

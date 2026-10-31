@@ -23,7 +23,7 @@ from .guard import guard_input
 from .long_term import anchor_is_valid
 from .parser import parse
 
-MODES = {"0": "DAILY", "1": "INTIMATE", "2": "EROTIC", "3": "EXITING"}
+MODES = {"0": "DAILY", "1": "CLOSE", "2": "INTENSE", "3": "EXITING"}
 SCENE = "【场景】帝江号·舷窗前；已相处约两小时"
 
 TOOLS = [
@@ -69,7 +69,7 @@ def make_executor(rt):
 
 
 HELP = """指令（不进入对话、不调用模型）：
-  /mod 0|1|2|3   切换状态：0 日常 / 1 亲密 / 2 情色 / 3 退出中
+  /mod 0|1|2|3   切换状态：0 日常 / 1 亲近 / 2 高强度 / 3 退出中
   /unlock 0|1    切换 L1 解锁状态（0 收紧 / 1 放开）
   /state         查看当前状态机
   /mem           查看记忆索引
@@ -335,7 +335,7 @@ def main() -> None:
             print(C.paint(f"{name} {args}", C.DEBUG))
 
         run = run_tools(rt.client, msgs, TOOLS, make_executor(rt), max_rounds=3,
-                        max_tokens=4000 if mode == "EROTIC" else 3000,
+                        max_tokens=4000 if mode == "INTENSE" else 3000,
                         stream=True, on_delta=on_delta, on_tool=on_tool)
         if phase["kind"]:
             sys.stdout.write(C.RESET)

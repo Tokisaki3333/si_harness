@@ -4,7 +4,7 @@
 """
 from .models import State
 
-MODES = ("DAILY", "INTIMATE", "EROTIC", "EXITING")
+MODES = ("DAILY", "CLOSE", "INTENSE", "EXITING")
 
 
 class StateMachine:
@@ -21,7 +21,7 @@ class StateMachine:
     def apply(self, delta: dict | None) -> State:
         if not delta:
             return self.state.copy()
-        for key in ("affection", "trust", "arousal"):
+        for key in ("affection", "trust", "intensity"):
             if key in delta:
                 step = max(-self.per_turn_limit, min(self.per_turn_limit, int(delta[key])))
                 setattr(self.state, key, self._clamp(getattr(self.state, key) + step))
@@ -40,7 +40,7 @@ class StateMachine:
         """调试入口：直接覆盖任意字段，不做增量。"""
         if "mode" in kwargs:
             self.set_mode(kwargs.pop("mode"))
-        for key in ("affection", "trust", "arousal"):
+        for key in ("affection", "trust", "intensity"):
             if key in kwargs:
                 setattr(self.state, key, self._clamp(int(kwargs.pop(key))))
         if "mood" in kwargs:
@@ -54,7 +54,7 @@ class StateMachine:
         s = self.state
         parts = [f"state={s.mode}", f"affection={s.affection}",
                  f"trust={s.trust}", f"mood={s.mood}"]
-        if s.mode in ("INTIMATE", "EROTIC"):
-            parts.append(f"arousal={s.arousal}")
+        if s.mode in ("CLOSE", "INTENSE"):
+            parts.append(f"intensity={s.intensity}")
         parts.append(f"unlock={self.unlock_token}")
         return "【状态机】" + "；".join(parts)

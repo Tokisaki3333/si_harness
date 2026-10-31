@@ -118,7 +118,7 @@ python -m harness.cli
 ## 指令
 
 ```text
-/mod 0|1|2|3   0 日常 / 1 亲密 / 2 情色 / 3 退出中
+/mod 0|1|2|3   0 日常 / 1 亲近 / 2 高强度 / 3 退出中
 /unlock 0|1    L1 收紧 / 放开
 /state         状态机
 /mem           记忆索引
