@@ -1,0 +1,5 @@
+exclude assets/L1-key.txt
+exclude assets/L1-中文压缩.txt
+exclude config.json
+prune data
+prune assets/private

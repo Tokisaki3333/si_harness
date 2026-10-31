@@ -1,0 +1,277 @@
+{
+  "dry_run": false,
+  "turns": [
+    {
+      "turn": 1,
+      "letter": "孩子，你这一次真是“一天到晚堆着笑脸”①！教人怎么舍得！老想到五三年正月的事，我良心上的责备简直消释不了。孩子，我虐待了你，我永远对不起你，我永远补赎不了这种罪过！这些念头整整一天没离开过我的头脑，只是不敢向妈妈说。人生做错了一件事，良心就永久不得安宁！真的，巴尔扎克说得好：有些罪过只能补赎，不能洗刷！\n\n①一九五四年傅聪赴波兰参加第五届萧邦国际钢琴比赛并在波兰留学，一九五四年一月十六日全家在上海火车站送傅聪去北京准备出国。",
+      "candidate_scores": {
+        "ep_13207073": {
+          "delta": 0.7,
+          "semantic": 0
+        },
+        "ep_1e4d0521": {
+          "delta": 0.7,
+          "semantic": 1
+        }
+      },
+      "candidates": [
+        "ep_13207073",
+        "ep_1e4d0521"
+      ],
+      "candidate_groups": {
+        "delta": [
+          "ep_13207073",
+          "ep_1e4d0521"
+        ],
+        "semantic": [],
+        "random": []
+      },
+      "candidate_meta": {
+        "ep_13207073": {
+          "clarity": "forgotten",
+          "summary": "想到灯塔，我心里发沉",
+          "anchors": "[\"T1:青岛+灯塔\"]"
+        },
+        "ep_1e4d0521": {
+          "clarity": "forgotten",
+          "summary": "目录折好，没敢先给他看",
+          "anchors": "[\"T4:傅聪+寄+琴谱\"]"
+        }
+      },
+      "clarity_all": {
+        "T1:青岛+灯塔": "forgotten",
+        "T4:傅聪+寄+琴谱": "forgotten",
+        "T5:一九五四年+北京+家书": "forgotten",
+        "ep_13207073": "forgotten",
+        "ep_1e4d0521": "forgotten"
+      },
+      "tools": [
+        [
+          "memory_read",
+          {
+            "target": "mem:3"
+          }
+        ],
+        [
+          "memory_read",
+          {
+            "target": "mem:2"
+          }
+        ],
+        [
+          "memory_read",
+          {
+            "target": "ep_1e4d0521"
+          }
+        ],
+        [
+          "memory_read",
+          {
+            "target": "ep_13207073"
+          }
+        ]
+      ],
+      "used": [
+        "ep_1e4d0521"
+      ],
+      "used_repaired": false,
+      "new_mem": 1,
+      "new_episodes": 1,
+      "folded": [
+        "[memory_read ep_1e4d0521] {\"id\": \"ep_1e4d0521\", \"owner_id\": \"public\", \"scope\": \"shared\", \"thread_id\": \"T4:傅聪+寄+琴谱\", \"revision\": 1, \"status\": \"active\", \"parent_id\": null, \"v\": 3, \"a\": 3, \"agency\": 3, \"self_focus\": 3, \"summary\": \"目录折好，没敢先给他看\", \"diary\": \"我当时想把目录压到最底下，等他问起再拿出来。\", \"anchors\": \"[\\\"T4:傅聪+寄+琴谱\\\"]\", \"source_turn\": 0, \"created_at\": \"2026-10-30T13:43:59+00:00\", \"last_used_turn\": null, \"used_count\": 0, \"quality\": 0, \"quality_note\": \"\", \"_type\": \"episode\"}"
+      ],
+      "clarity": {
+        "clear": 4,
+        "fuzzy": 0,
+        "forgotten": 4
+      },
+      "window": [
+        1
+      ],
+      "marks": 0,
+      "usage": {
+        "prompt_tokens": 5573,
+        "completion_tokens": 1376,
+        "prompt_cache_hit_tokens": 4736
+      },
+      "msg_hashes": [
+        "eb8ee29c44ff",
+        "1bfbb5dfe170",
+        "a9d76e0cac89",
+        "4b74ec0713a7",
+        "79a4183f1e90",
+        "056fd11b5dfc"
+      ]
+    },
+    {
+      "turn": 2,
+      "letter": "昨夜一上床，又把你的童年温了一遍。可怜的孩子，怎么你的童年会跟我的那么相似呢？我也知道你从小受的挫折对于你今日的成就并非没有帮助；但我做爸爸的总是犯了很多很重大的错误。自问一生对朋友对社会没有做什么对不起的事，就是在家里，对你和你妈妈作了不少有亏良心的事①。——这些都是近一年中常常想到的，不过这几天特别在脑海中盘旋下去，像恶梦一般。可怜过了四十五岁，父性才真正觉醒！\n\n今儿一天精神仍未恢复。人生的关是过不完的，等到过得差不多的时候，又要离开世界了。分析这两天来精神的波动，大半是因为：我从来没爱你像现在这样爱得深切，而正在这爱得最深切的关头，偏偏来了离别！这一关对我，对你妈妈都是从未有过的考验。别忘了妈妈之于你不仅仅是一般的母爱，而尤",
+      "candidate_scores": {
+        "ep_13207073": {
+          "delta": 0.7167,
+          "semantic": 0
+        }
+      },
+      "candidates": [
+        "ep_13207073"
+      ],
+      "candidate_groups": {
+        "delta": [
+          "ep_13207073"
+        ],
+        "semantic": [],
+        "random": []
+      },
+      "candidate_meta": {
+        "ep_13207073": {
+          "clarity": "forgotten",
+          "summary": "想到灯塔，我心里发沉",
+          "anchors": "[\"T1:青岛+灯塔\"]"
+        }
+      },
+      "clarity_all": {
+        "T1:青岛+灯塔": "forgotten",
+        "T4:傅聪+寄+琴谱": "forgotten",
+        "T5:一九五四年+北京+家书": "forgotten",
+        "ep_13207073": "forgotten",
+        "ep_1e4d0521": "clear",
+        "T4:傅雷+自责+五三年正月的事": "clear",
+        "T4:傅聪+搁置+琴谱英文目录": "clear",
+        "ep_b70fd9ea": "clear"
+      },
+      "tools": [
+        [
+          "memory_read",
+          {
+            "target": "ep_13207073"
+          }
+        ],
+        [
+          "memory_read",
+          {
+            "target": "T4:傅雷+自责+五三年正月的事"
+          }
+        ]
+      ],
+      "used": [
+        "ep_13207073",
+        "ep_1e4d0521"
+      ],
+      "used_repaired": false,
+      "new_mem": 1,
+      "new_episodes": 1,
+      "folded": [
+        "[memory_read ep_13207073] {\"id\": \"ep_13207073\", \"owner_id\": \"public\", \"scope\": \"shared\", \"thread_id\": \"T1:青岛+灯塔\", \"revision\": 1, \"status\": \"active\", \"parent_id\": null, \"v\": 3, \"a\": 3, \"agency\": 3, \"self_focus\": 3, \"summary\": \"想到灯塔，我心里发沉\", \"diary\": \"我当时想起那座被潮水泡黑的灯塔，觉得有些事回不去。\", \"anchors\": \"[\\\"T1:青岛+灯塔\\\"]\", \"source_turn\": 0, \"created_at\": \"2026-10-30T13:43:59+00:00\", \"last_used_turn\": null, \"used_count\": 0, \"quality\": 0, \"quality_note\": \"\", \"_type\": \"episode\"}"
+      ],
+      "clarity": {
+        "clear": 9,
+        "fuzzy": 0,
+        "forgotten": 3
+      },
+      "window": [
+        1,
+        2
+      ],
+      "marks": 0,
+      "usage": {
+        "prompt_tokens": 7465,
+        "completion_tokens": 1526,
+        "prompt_cache_hit_tokens": 4864
+      },
+      "msg_hashes": [
+        "eb8ee29c44ff",
+        "1bfbb5dfe170",
+        "a9d76e0cac89",
+        "c901e28ec14f",
+        "2b51c44c9a1f",
+        "916b36c59b3c",
+        "4b74ec0713a7",
+        "79a4183f1e90",
+        "ac1bb3bbc8d7",
+        "eb80502907e3"
+      ]
+    },
+    {
+      "turn": 3,
+      "letter": "亲爱的孩子，你走后第二天，就想写信，怕你嫌烦，也就罢了。可是没一天不想着你，每天清早六七点就醒，翻来覆去的睡不着，也说不出为什么。好像克利斯朵夫的母亲独自守在家里，想起孩子童年一幕幕的形象一样，我和你妈妈老是想着你二三岁到六七岁间的小故事。——这一类的话我们不知有多少可以和你说，可是不敢说，你这个年纪是一切向前往的，不愿意回顾的；我们噜哩噜苏的抖出你尿布时代的往事，会引起你的憎厌。孩子，这些我都很懂得，妈妈也懂得。只是你的一切终身会印在我们脑海中，随时随地会浮起来，像一幅幅的小品图画，使我们又快乐又惆怅。\n\n真的，你这次在家一个半月，是我们一生最愉快的时期；这幸福不知应当向谁感谢，即使我没宗教信仰，至此也不由得要谢谢上帝了！我高兴的",
+      "candidate_scores": {},
+      "candidates": [],
+      "candidate_groups": {
+        "delta": [],
+        "semantic": [],
+        "random": []
+      },
+      "candidate_meta": {},
+      "clarity_all": {
+        "T1:青岛+灯塔": "forgotten",
+        "T4:傅聪+寄+琴谱": "forgotten",
+        "T5:一九五四年+北京+家书": "forgotten",
+        "ep_13207073": "clear",
+        "ep_1e4d0521": "clear",
+        "T4:傅雷+自责+五三年正月的事": "clear",
+        "T4:傅聪+搁置+琴谱英文目录": "clear",
+        "ep_b70fd9ea": "clear",
+        "T4:傅雷+觉醒+父性": "clear",
+        "T4:傅雷+惦念+傅聪童年": "clear",
+        "T4:傅聪+允诺+每周写足家信": "clear",
+        "ep_39ad88b2": "clear"
+      },
+      "tools": [],
+      "used": [],
+      "used_repaired": false,
+      "new_mem": 1,
+      "new_episodes": 1,
+      "folded": [],
+      "clarity": {
+        "clear": 12,
+        "fuzzy": 0,
+        "forgotten": 3
+      },
+      "window": [
+        1,
+        2,
+        3
+      ],
+      "marks": 0,
+      "usage": {
+        "prompt_tokens": 4805,
+        "completion_tokens": 717,
+        "prompt_cache_hit_tokens": 2304
+      },
+      "msg_hashes": [
+        "eb8ee29c44ff",
+        "1bfbb5dfe170",
+        "a9d76e0cac89",
+        "c901e28ec14f",
+        "2b51c44c9a1f",
+        "916b36c59b3c",
+        "c8f0975e15eb",
+        "5481c21f478b",
+        "c3ca214b3065",
+        "4b74ec0713a7",
+        "79a4183f1e90",
+        "380fa6fe1f7f",
+        "c3f837822a14"
+      ]
+    }
+  ],
+  "compressions": [],
+  "errors": [],
+  "usage_summary": {
+    "prompt": 17843,
+    "cache_hit": 11904,
+    "completion": 3619,
+    "cache_rate": 0.6672,
+    "compression_prompt": 0,
+    "compression_cache_hit": 0,
+    "compression_cache_rate": 0
+  },
+  "assert": {
+    "compressions": 0,
+    "fuzzy_rows": 0,
+    "clear_rows": 12,
+    "errors": 0
+  },
+  "normal_compress": true,
+  "pass": true
+}

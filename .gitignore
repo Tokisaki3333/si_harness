@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+config.json
+data/
+assets/private/
+assets/L1-key.txt
+assets/L1-中文压缩.txt
+docs/03-情色注入词.md
+*.db-wal
+*.db-shm

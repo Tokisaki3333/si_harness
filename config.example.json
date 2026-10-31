@@ -1,0 +1,22 @@
+﻿{
+  "key_path": "key.json",
+  "l1_path": "",
+  "l1_key_path": "",
+  "unlock_key": "7F2K",
+  "card_path": "assets/01-人格卡-祀.md",
+  "index_path": "assets/index.example.json",
+  "docs_path": "assets/docs.json",
+  "data_root": "data",
+  "session_id": "cli",
+  "model": "deepseek-flash",
+  "bucket_size": 500,
+  "allow_merge": false,
+  "compress": {
+    "context_limit": 400000,
+    "recent_turns_min": 8,
+    "recent_tokens_max": 8000,
+    "summary_min_items": 16,
+    "summary_max_tokens": 3000,
+    "fixed_tokens": 6000
+  }
+}
