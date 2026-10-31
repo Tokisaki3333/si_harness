@@ -9,7 +9,7 @@ Copy-Item config.example.json config.json
 python -m harness.cli
 ```
 
-Python 要求 **3.10+**。核心运行时只使用标准库，`requirements.txt` 为空。
+Python 要求 **3.10+**。无第三方 pip 依赖；数据库使用 Python 内置的 `sqlite3`，不需要外部服务。`requirements.txt` 为空。
 
 其他配置文件：
 

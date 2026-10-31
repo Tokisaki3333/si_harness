@@ -3,7 +3,7 @@
 > **状态（2026-10-31）**：内核完整，可对话；记忆系统闭环；缓存命中与理论一致。
 > 入口：`python -m harness.cli`（先复制 `config.example.json` 为 `config.json`，在 `key.json` 或 `DEEPSEEK_KEY` 提供密钥）。
 > 验收：`python -m unittest discover -s tests -p "test_*.py"`（62 项）。
-> Python >= 3.10；核心无第三方依赖。使用与调参见 [HOWTOPLAY.md](HOWTOPLAY.md)，待办见 [TODO.md](TODO.md)。
+> Python >= 3.10；无第三方 pip 依赖；数据库使用标准库 `sqlite3`。使用与调参见 [HOWTOPLAY.md](HOWTOPLAY.md)，待办见 [TODO.md](TODO.md)。
 
 祀的角色扮演运行时。负责上下文组装、状态机、会话记忆、资料库、压缩、CLI；长期记忆是子模块 `long_term_memory`，负责客观记忆与情感记忆。
 
@@ -55,7 +55,7 @@ shi_harness/
 
 ## 依赖
 
-核心运行时只用标准库，无第三方依赖；Python >= 3.10。
+Python >= 3.10。无第三方 pip 依赖；数据库使用 Python 内置的 `sqlite3`，不需要安装或运行外部数据库服务。
 
 ## 配置
 
